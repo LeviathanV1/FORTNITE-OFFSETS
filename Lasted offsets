@@ -1,0 +1,73 @@
+{
+  "offsets": {
+    "UWorld": "0x17842098",
+    "UWorldXorKey": "0x97363D09ULL",
+
+    "LocalPlayers": "0x38",
+    "PlayerController": "0x30",
+    "PlayerCameraManager": "0x368",
+    "AcknowledgedPawn": "0x358",
+    "PlayerState": "0x2D0",
+    "TeamIndex": "0x11B1",
+    "bIsDying": "0x728",
+    "bIsDBNO": "0x841",
+    "bIsABot": "0x2BA",
+
+    "Platform": "0x440",
+    "TargetedFortPawn": "0x1830",
+    "KillScore": "0x110c",
+    "RebootCount": "0x1894",
+    "PlayerName": "0xA08",
+    "PlayerNamePrivate": "0x348",
+    "RankedProgress": "0xD8",
+
+    "OwningGameInstance": "0x238",
+    "GameState": "0x1c0",
+    "PlayerArray": "0x2C8",
+
+    "PersistentLevel": "0x38",
+    "Levels": "0x1d8",
+
+    "AActor": "0x158",
+    "RootComponent": "0x1B0",
+    "PawnPrivate": "0x328",
+
+    "Mesh": "0x330",
+    "BoneArray": "0x5F0",
+    "BoneCache": "0x600",
+
+    "ComponentToWorld": "0x1E0",
+    "RelativeLocation": "0x140",
+    "RelativeRotation": "0x158",
+    "ComponentVelocity": "0x188",
+    "LastRenderTime": "0x328",
+
+    "CameraLocation": "0x170",
+    "CameraRotation": "0x180",
+    "CameraFOV": "0x3b4",
+
+    "CurrentVehicle": "0x2c68",
+
+    "CurrentWeapon": "0x990",
+    "WeaponData": "0x5c8",
+    "WeaponOffsetCorrection": "0x2c00",
+    "AdditionalAimOffset": "0x2b80",
+    "AmmoCount": "0x14d4",
+
+    "ProjectileSpeed": "0x2564",
+    "ProjectileGravity": "0x2568",
+
+    "HabaneroComponent": "0x948",
+
+    "Spectators": "0xaa0",
+    "SpectatorArray": "0x108",
+
+    "TargetSourceOffset": "0x1448",
+    "TargetSourceOffsetWhileTargeting": "0x1478",
+    "TargetSourceOffsetWhileCrouched": "0x1460",
+    "bTraceThroughWorld": "0x4d0",
+
+    "Tier": "0xaa",
+    "ItemName": "0x40"
+  }
+}
