@@ -1,73 +1,133 @@
+
+#pragma once
+#include <cstdint>
+
+namespace offsets
 {
-  "offsets": {
-    "UWorld": "0x17842098",
-    "UWorldXorKey": "0x97363D09ULL",
+    namespace engine
+    {
+        inline constexpr uintptr_t uworld = 0x17842098;
+        inline constexpr uintptr_t uworld_xor_key = 0x97363D09ULL;
 
-    "LocalPlayers": "0x38",
-    "PlayerController": "0x30",
-    "PlayerCameraManager": "0x368",
-    "AcknowledgedPawn": "0x358",
-    "PlayerState": "0x2D0",
-    "TeamIndex": "0x11B1",
-    "bIsDying": "0x728",
-    "bIsDBNO": "0x841",
-    "bIsABot": "0x2BA",
+        inline constexpr uintptr_t owning_game_instance = 0x238;
+        inline constexpr uintptr_t game_state = 0x1C0;
+        inline constexpr uintptr_t persistent_level = 0x38;
+        inline constexpr uintptr_t levels = 0x1D8;
+    }
 
-    "Platform": "0x440",
-    "TargetedFortPawn": "0x1830",
-    "KillScore": "0x110c",
-    "RebootCount": "0x1894",
-    "PlayerName": "0xA08",
-    "PlayerNamePrivate": "0x348",
-    "RankedProgress": "0xD8",
+    namespace game_instance
+    {
+        inline constexpr uintptr_t local_players = 0x38;
+    }
 
-    "OwningGameInstance": "0x238",
-    "GameState": "0x1c0",
-    "PlayerArray": "0x2C8",
+    namespace player
+    {
+        inline constexpr uintptr_t player_controller = 0x30;
+        inline constexpr uintptr_t player_camera_manager = 0x368;
+        inline constexpr uintptr_t acknowledged_pawn = 0x358;
+    }
 
-    "PersistentLevel": "0x38",
-    "Levels": "0x1d8",
+    namespace player_controller
+    {
+        inline constexpr uintptr_t targeted_fort_pawn = 0x1830;
+    }
 
-    "AActor": "0x158",
-    "RootComponent": "0x1B0",
-    "PawnPrivate": "0x328",
+    namespace player_state
+    {
+        inline constexpr uintptr_t team_index = 0x11B1;
+        inline constexpr uintptr_t platform = 0x440;
 
-    "Mesh": "0x330",
-    "BoneArray": "0x5F0",
-    "BoneCache": "0x600",
+        inline constexpr uintptr_t kill_score = 0x110C;
+        inline constexpr uintptr_t reboot_count = 0x1894;
 
-    "ComponentToWorld": "0x1E0",
-    "RelativeLocation": "0x140",
-    "RelativeRotation": "0x158",
-    "ComponentVelocity": "0x188",
-    "LastRenderTime": "0x328",
+        inline constexpr uintptr_t player_name = 0xA08;
+        inline constexpr uintptr_t player_name_private = 0x348;
+        inline constexpr uintptr_t ranked_progress = 0xD8;
 
-    "CameraLocation": "0x170",
-    "CameraRotation": "0x180",
-    "CameraFOV": "0x3b4",
+        inline constexpr uintptr_t b_is_a_bot = 0x2BA;
+    }
 
-    "CurrentVehicle": "0x2c68",
+    namespace pawn
+    {
+        inline constexpr uintptr_t pawn_private = 0x328;
+        inline constexpr uintptr_t root_component = 0x1B0;
 
-    "CurrentWeapon": "0x990",
-    "WeaponData": "0x5c8",
-    "WeaponOffsetCorrection": "0x2c00",
-    "AdditionalAimOffset": "0x2b80",
-    "AmmoCount": "0x14d4",
+        inline constexpr uintptr_t mesh = 0x330;
 
-    "ProjectileSpeed": "0x2564",
-    "ProjectileGravity": "0x2568",
+        inline constexpr uintptr_t b_is_dying = 0x728;
+        inline constexpr uintptr_t b_is_dbno = 0x841;
 
-    "HabaneroComponent": "0x948",
+        inline constexpr uintptr_t current_vehicle = 0x2C68;
+        inline constexpr uintptr_t current_weapon = 0x990;
+    }
 
-    "Spectators": "0xaa0",
-    "SpectatorArray": "0x108",
+    namespace actor
+    {
+        inline constexpr uintptr_t aactor = 0x158;
+    }
 
-    "TargetSourceOffset": "0x1448",
-    "TargetSourceOffsetWhileTargeting": "0x1478",
-    "TargetSourceOffsetWhileCrouched": "0x1460",
-    "bTraceThroughWorld": "0x4d0",
+    namespace mesh
+    {
+        inline constexpr uintptr_t bone_array = 0x5F0;
+        inline constexpr uintptr_t bone_cache = 0x600;
+        inline constexpr uintptr_t last_render_time = 0x328;
+    }
 
-    "Tier": "0xaa",
-    "ItemName": "0x40"
-  }
+    namespace scene_component
+    {
+        inline constexpr uintptr_t component_to_world = 0x1E0;
+        inline constexpr uintptr_t relative_location = 0x140;
+        inline constexpr uintptr_t relative_rotation = 0x158;
+        inline constexpr uintptr_t component_velocity = 0x188;
+    }
+
+    namespace camera
+    {
+        inline constexpr uintptr_t camera_location = 0x170;
+        inline constexpr uintptr_t camera_rotation = 0x180;
+        inline constexpr uintptr_t camera_fov = 0x3B4;
+    }
+
+    namespace weapon
+    {
+        inline constexpr uintptr_t weapon_data = 0x5C8;
+        inline constexpr uintptr_t weapon_offset_correction = 0x2C00;
+        inline constexpr uintptr_t additional_aim_offset = 0x2B80;
+
+        inline constexpr uintptr_t ammo_count = 0x14D4;
+
+        inline constexpr uintptr_t projectile_speed = 0x2564;
+        inline constexpr uintptr_t projectile_gravity = 0x2568;
+    }
+
+    namespace habanero
+    {
+        inline constexpr uintptr_t habanero_component = 0x948;
+    }
+
+    namespace spectator
+    {
+        inline constexpr uintptr_t spectators = 0xAA0;
+        inline constexpr uintptr_t spectator_array = 0x108;
+    }
+
+    namespace targeting
+    {
+        inline constexpr uintptr_t target_source_offset = 0x1448;
+        inline constexpr uintptr_t target_source_offset_while_targeting = 0x1478;
+        inline constexpr uintptr_t target_source_offset_while_crouched = 0x1460;
+
+        inline constexpr uintptr_t b_trace_through_world = 0x4D0;
+    }
+
+    namespace game_state
+    {
+        inline constexpr uintptr_t player_array = 0x2C8;
+    }
+
+    namespace item
+    {
+        inline constexpr uintptr_t tier = 0xAA;
+        inline constexpr uintptr_t item_name = 0x40;
+    }
 }
