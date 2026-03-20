@@ -1,0 +1,22 @@
+// Offsets:
+// Mesh->World = 0xB0
+// World->DeltaTimeSeconds = 0x874
+// World->TimeSeconds = 0x850
+// Mesh->LastRenderTime = 0x330
+
+bool is_visible( uintptr_t mesh )
+{
+        // WasRecentlyRendered
+        // Signature: F3 0F 10 88 ? ? ? ? F3 0F 58 0D ? ? ? ? F3 0F 5F C1
+//IF YOU WANT TO DUMP 
+
+        auto world = driver::km->read<uintptr_t>( mesh + 0xB0 );
+        auto delta_time_seconds = driver::km->read<float>( world + 0x874 );
+        auto time_seconds = driver::km->read<double>( world + 0x850 );
+
+        auto last_render_time = driver::km->read<float>( mesh + 0x330 );
+        auto time_since = time_seconds - last_render_time;
+
+        auto render_time_threshold = fmaxf( 0.06f , delta_time_seconds + 0.000099999997f );
+        return time_since <= render_time_threshold;
+}
