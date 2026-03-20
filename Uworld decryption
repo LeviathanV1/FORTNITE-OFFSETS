@@ -1,4 +1,5 @@
-inline uint64_t decryptUWorld(uint64_t world)
-{
-    return ~std::rotl(world^ 0x97363D09ULL, 50);
-}
+    constexpr uintptr_t UWorld = 0x193717F0;
+    inline uint64_t DecryptUworld(uint64_t value)
+    {
+        return _rotl64(value, 32) ^ 0x97F199673D1F48C6uLL;
+    }
