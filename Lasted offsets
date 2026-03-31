@@ -1,7 +1,7 @@
 {
   "offsets": {
-    "UWorld": "0x193717F0",
-    "UWorldXorKey": "0x97F199673D1F48C6uLL",
+    "UWorld": "0x19401C60",
+    "UWorldXorKey": "0x35E5647853A0CBFULL",
 
     "LocalPlayers": "0x38",
     "PlayerController": "0x30",
@@ -14,18 +14,18 @@
     "bIsABot": "0x2BA",
 
     "Platform": "0x440",
-    "TargetedFortPawn": "0x1830",
+    "TargetedFortPawn": "0x1810",
     "KillScore": "0x110c",
     "RebootCount": "0x1894",
     "PlayerName": "0xA08",
     "PlayerNamePrivate": "0x348",
     "RankedProgress": "0xD8",
 
-    "OwningGameInstance": "0x238",
-    "GameState": "0x1c0",
+    "OwningGameInstance": "0x250",
+    "GameState": "0x1d8",
     "PlayerArray": "0x2C8",
 
-    "PersistentLevel": "0x38",
+    "PersistentLevel": "0x40",
     "Levels": "0x1d8",
 
     "AActor": "0x158",
@@ -33,8 +33,8 @@
     "PawnPrivate": "0x328",
 
     "Mesh": "0x330",
-    "BoneArray": "0x5F0",
-    "BoneCache": "0x600",
+    "BoneArray": "0x628",
+    "BoneCache": "0x638",
 
     "ComponentToWorld": "0x1E0",
     "RelativeLocation": "0x140",
@@ -42,16 +42,16 @@
     "ComponentVelocity": "0x188",
     "LastRenderTime": "0x328",
 
-    "CameraLocation": "0x170",
-    "CameraRotation": "0x180",
+    "CameraLocation": "0x180",
+    "CameraRotation": "0x190",
     "CameraFOV": "0x3b4",
 
     "CurrentVehicle": "0x2c68",
 
     "CurrentWeapon": "0x990",
-    "WeaponData": "0x5c8",
+    "WeaponData": "0x678",
     "WeaponOffsetCorrection": "0x2c00",
-    "AdditionalAimOffset": "0x2b80",
+    "AdditionalAimOffset": "0x29c0",
     "AmmoCount": "0x14d4",
 
     "ProjectileSpeed": "0x2564",
@@ -59,13 +59,13 @@
 
     "HabaneroComponent": "0x948",
 
-    "Spectators": "0xaa0",
+    "Spectators": "0xAB0",
     "SpectatorArray": "0x108",
 
-    "TargetSourceOffset": "0x1448",
-    "TargetSourceOffsetWhileTargeting": "0x1478",
-    "TargetSourceOffsetWhileCrouched": "0x1460",
-    "bTraceThroughWorld": "0x4d0",
+    "TargetSourceOffset": "0x11a8",
+    "TargetSourceOffsetWhileTargeting": "0x11d8",
+    "TargetSourceOffsetWhileCrouched": "0x11c0",
+    "bTraceThroughWorld": "0x1189",
 
     "Tier": "0xaa",
     "ItemName": "0x40"
