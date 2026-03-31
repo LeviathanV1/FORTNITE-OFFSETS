@@ -1,5 +1,10 @@
-    constexpr uintptr_t UWorld = 0x193717F0;
-    inline uint64_t DecryptUworld(uint64_t value)
-    {
-        return _rotl64(value, 32) ^ 0x97F199673D1F48C6uLL;
-    }
+inline uint64_t DecryptUWorld(uint64_t world)
+{
+    return ~std::rotl(world, 32) ^ 0x97F199673D1F48C6uLL;
+}
+
+//example usage
+uintptr_t EncryptedUWorld = Driver->read<uintptr_t>(Driver->BaseAddress + offsets::UWorld);
+uintptr_t DecryptedUWorld = DecryptUWorld(EncryptedUWorld);
+
+uintptr_t UWorld = DecryptedUWorld;
